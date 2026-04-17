@@ -1,4 +1,5 @@
-# Supplychain360-unified-data-platform
+# CapstoneProject-Supply360
+
 End-to-end data engineering platform for SupplyChain360 to centralize fragmented logistics, inventory, and sales data. Built to optimize inventory planning, monitor supplier performance, and reduce operational stockouts.
 
 > AWS · GCP BigQuery · dbt · Airflow · Airbyte · Terraform
