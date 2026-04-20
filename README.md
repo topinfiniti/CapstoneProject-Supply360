@@ -1,19 +1,22 @@
-# CapstoneProject-Supply360
+# Supply360: End-to-End Supply Chain Intelligence
 
-End-to-end data engineering platform for SupplyChain360 to centralize fragmented logistics, inventory, and sales data. Built to optimize inventory planning, monitor supplier performance, and reduce operational stockouts.
+Supply360 is a production-grade data engineering platform designed to unify fragmented logistics, inventory, and sales telemetry. 
 
-> AWS · GCP BigQuery · dbt · Airflow · Airbyte · Terraform
+By centralizing disparate data streams, the platform enables proactive inventory optimization, rigorous supplier auditing, and a significant reduction in operational stockouts.
 
----
+Tech Stack: Terraform · Airbyte · AWS S3 · GCP BigQuery · Airflow · dbt
 
-## Overview
+#The Pipeline
 
-Supplychain360 ingests supply chain data from multiple sources, stages it in AWS S3, loads it into BigQuery, and transforms it using dbt to answer four core analytical questions:
+The architecture follows a modern ELT pattern: raw data is orchestrated via Airflow, ingested from multi-source APIs using Airbyte, and landed in AWS S3. Data is then staged in BigQuery and modeled through dbt to generate high-fidelity insights across four critical domains:
 
-- **Product stockout trends** — frequency, duration, and pattern of stockout events by product, category, and warehouse
-- **Supplier delivery performance** — on-time rate, average delay, and lead time variance per supplier
-- **Warehouse efficiency** — estimated inbound and outbound throughput derived from daily inventory snapshots
-- **Regional sales demand** — gross and net revenue, units sold, and transaction volume by region, store, and period
+‣ Inventory Resilience: Analyzing stockout frequency and patterns to prevent revenue loss.
+
+‣ Supplier Logistics: Quantifying reliability through on-time rates and lead time variance.
+
+‣ Operational Throughput: Calculating warehouse efficiency via granular inbound/outbound snapshots.
+
+‣ Market Intelligence: Mapping regional demand and net revenue performance across the retail footprint.
 
 ---
 
